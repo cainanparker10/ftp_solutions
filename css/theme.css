@@ -1568,6 +1568,22 @@ pre {
   padding-left: 50px;
   padding-right: 50px; }
 
+.col-md-4-logo {
+  position: relative;
+  min-height: 1px;
+  padding-top: 35px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.col-md-6-logo {
+  position: relative;
+  min-height: 1px;
+  padding-top: 35px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 .col-part-1 {
   position: relative;
   min-height: 1px;
@@ -2897,17 +2913,17 @@ fieldset[disabled] a.btn {
     background-color: #333; }
 
 .btn-primary {
-  color: #fff;
-  background-color: #0db8b2;
-  border-color: #0db8b2; }
+  color: #40403f;
+  background-color: #d2de26;
+  border-color: #d2de26; }
   .btn-primary:focus, .btn-primary.focus {
     color: #fff;
     background-color: #0a8884;
     border-color: #05413f; }
   .btn-primary:hover {
     color: #fff;
-    background-color: #0a8884;
-    border-color: #097f7b; }
+    background-color: #40403f;
+    border-color: #40403f; }
   .btn-primary:active, .btn-primary.active,
   .open > .btn-primary.dropdown-toggle {
     color: #fff;
