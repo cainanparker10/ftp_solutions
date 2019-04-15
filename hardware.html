@@ -11,31 +11,6 @@
     <link rel="icon" href="logo.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-    #overlay {
-      position: fixed;
-      display: none;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: rgba(0,0,0,0.5);
-      z-index: 2;
-      cursor: pointer;
-    }
-    
-    #text{
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      font-size: 50px;
-      color: white;
-      transform: translate(-50%,-50%);
-      -ms-transform: translate(-50%,-50%);
-    }
-    </style>
 
     <title>Hardware</title>
 
@@ -161,11 +136,12 @@
             </div><br>
             <h6 style="color: #40403f">Support for Integrators</h6>
             <p>TracBox is fully supported by the IMS platform and will allow users to have access to real-time location and IO data. When used with IMS, all data is published to a JSON http end-point, allowing developers and integrators to efficiently scrape details programmatically for integration with 3rd party systems.</p><br>
-            <h6 style="color: #40403f">Technical Specifications</h6>
-            <div class="col-md-8" style="padding-right: 1px; padding-left: 1px; padding-bottom: 60px">
-              <div id="overlay" onclick="off()">
-                <div id="specs" class="col-md-8 col-md-offset-2 text-center" style="margin-top: 150px; background-color: #666666; opacity: 0.5; height: 500px">
+            <h6 style="color: #40403f">Technical Specifications and Pricing</h6>
+            <div class="col-md-4" style="padding-right: 1px; padding-left: 1px; padding-bottom: 10px">
+              <div id="tech-specs" onclick="off('tech-specs')" class="overlay-popout">
+                <div id="specs" class="col-md-8 col-md-offset-2 text-center" style="margin-top: 150px; background-color: #666666; opacity: 0.9; height: 74%">
                   <table style="width:100%; padding-top: 100px; color: #f2f2f2;"><br>
+                    <p style="font-size: 200%; color: #f2f2f2">Technical Specifications</p>
                     <tr>
                       <td style=" padding-right: 20px; text-align: right">Name:</td>
                       <td style="padding-left: 20px; text-align: left">TracBox v6a4</td>
@@ -266,28 +242,64 @@
                 </div>
               </div>
               <div>
-                <button onclick="on()" class="btn btn-md btn-primary navbar-btn">Click Here</button>
+                <button onclick="on('tech-specs')" class="btn btn-md btn-primary navbar-btn">Tech Specs</button><br>
               </div>
+
+            </div>
+            <div class="col-md-4" style="padding-right: 1px; padding-left: 1px; padding-bottom: 10px">
+              <div id="overlay-pricing" onclick="off('overlay-pricing')" class="overlay-popout">
+                <div id="pricing" class="col-md-8 col-md-offset-2 text-center" style="margin-top: 150px; background-color: #666666; opacity: 0.9; height: 40%">
+                  <table style="width:100%; padding-top: 100px; color: #f2f2f2;"><br>
+                    <p style="font-size: 200%; color: #f2f2f2">TracBox Pricing</p>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">1 - 20 Units</td>
+                      <td style="padding-left: 20px; text-align: left">$550.00 (ex GST & Shipping)</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">21 - 50 Units</td>
+                      <td style="padding-left: 20px; text-align: left">$525.00 (ex GST & Shipping)</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">51 + </td>
+                      <td style="padding-left: 20px; text-align: left">$500.00 (ex GST & Shipping)</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">Extras:</td>
+                      <td style="padding-left: 20px; text-align: left">-------------------------------------</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">WiFi 2.4/5.8GHz</td>
+                      <td style="padding-left: 20px; text-align: left">$50 per unit</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">Gigabit Ethernet</td>
+                      <td style="padding-left: 20px; text-align: left">$50 per unit</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">LTE Modem</td>
+                      <td style="padding-left: 20px; text-align: left">$150 per unit</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">Relay Module</td>
+                      <td style="padding-left: 20px; text-align: left">$50 per unit</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">802.15.4 Modem</td>
+                      <td style="padding-left: 20px; text-align: left">$150 per unit</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div>
+                <button onclick="on('overlay-pricing')" class="btn btn-md btn-primary navbar-btn">Pricing</button><br>
+              </div>              
             </div>
           </div>
         </div>       
       </div>
     </div>
-              <div id="overlay" onclick="off()">
-                <div id="text">THIS IS THE TECH SPECS!!!</div>
-              </div>
-    <div class="wrapper wrapper-sm wrapper-light" id="main">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8">
-            <h3 style="color: #d2de26">Pricing</h3>
-            <p>This is a simple empty page template. Just with a navbar and footer section and this content area in between. Use it as startingpoint to develop your own content pages.</p>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="wrapper wrapper-lg wrapper-lighter" id="main">
+    <div class="wrapper wrapper-lg wrapper-light" id="main">
       <div class="container">
         <div class="row">
           <div class="col-md-8">
@@ -299,56 +311,192 @@
       </div>
     </div>
 
-    <div class="wrapper wrapper-sm wrapper-light" id="main">
+
+    <div class="wrapper wrapper-sm wrapper-lighter" id="main">
       <div class="container">
         <div class="row">
-          <div class="col-md-8">
-            <h3 style="color: #d2de26">Pricing</h3>
-            <p>This is a simple empty page template. Just with a navbar and footer section and this content area in between. Use it as startingpoint to develop your own content pages.</p>
+          <div class="col-md-6 text-center">
+            <h3 style="color: #d2de26">OBDBox</h3><br><br><br><br>
+            <img src="img/obdbox.png" style="height:350px; padding-top: 40px" class="wow fadeIn" data-wow-delay="0.75s">
           </div>
-        </div>
+          <div class="col-md-6" style="border-left: 1px solid #9bca3c;">
+            <h6 style="color: #40403f">Real-Time Vehicle Telemetry and Location</h6>
+            <p>The OBDBox provides the ability to read vehicle telemetry data through the On Board Diagnostic Port II (OBDII) of almost all light and commercial vehicles. The unit also contains an LTE modem and GPS to provide realtime telemetry and tracking through FTP Technologies’ IMS platform.</p><br>
+            <h6 style="color: #40403f">Vehicle and OBD Data</h6>
+            <p>Interface the OBDBox with the vehicle’s OBD port to read data from the ECU, such as:<br></p>
+            <div class="col-md-6">
+              <li>Vehicle Speed (km/h)</li>
+              <li>Engine RPM</li>
+              <li>Engine Coolant Temperature (C)</li>
+              <li>Throttle Pedal Position (%)</li>
+              <li>Engine Load (%)</li>
+              <li>Fuel Rail Pressure (kPa)</li>
+              <li>Engine Fuel Rate (L/h)</li>
+              <li>O2 Sensor Voltage (V)</li>
+            </div>
+            <div class="col-md-6">
+              <li>Fuel Tank Level (%)</li>
+              <li>Vehicle Battery Voltage (V)</li>
+              <li>GPS Location (Lat, Lon)</li>
+              <li>Intake Air Temperature (C)</li>
+              <li>Timing Advance (deg.)</li>
+              <li>Narrow Band Air/Fuel Ratio</li>
+              <li>Engine Oil Temperature (C)</li>
+              <li>Commanded AFR</li>
+            </div><br>
+            <br>
+            <p style="font-size: 8px; padding-top: 20px" class="text-muted"><br>
+              NOTE: Not all data is available on all vehicles
+            </p><br>
+            <h6 style="color: #40403f">Driver Behaviour Monitoring</h6>
+            <p>The small form factor of the TracBox allows it to be installed in spaces where traditional GPS tracking/hardware sensor devices can't be installed. TracBox is specially designed to be mounted on the common hardware DIN rail. The unit measures a tiny 70mm x 90mm x 61mm.</p><br>
+            <h6 style="color: #40403f">Multiple Interfaces</h6>
+            <div class="col-md-6" style="padding-right: 1px; padding-left: 1px; padding-bottom: 60px">
+              <li>Rough Braking</li>
+              <li>Harsh Driving</li>
+              <li>No Warm Up</li>
+              <li>Long Idle</li>
+            </div>
+            <div class="col-md-6" style="padding-right: 1px; padding-left: 1px; padding-bottom: 60px">
+              <li>Fatigued Driving</li>
+              <li>Rough Terrain</li>
+              <li>High RPM</li>
+            </div><br>
+            <br>
+            <p style="font-size: 8px; padding-top: 20px" class="text-muted"><br>
+              NOTE: Crash detection is also possible!
+            </p><br>
+            <h6 style="color: #40403f">Support for Integrators</h6>
+            <p>TracBox is fully supported by the IMS platform and will allow users to have access to real-time location and IO data. When used with IMS, all data is published to a JSON http end-point, allowing developers and integrators to efficiently scrape details programmatically for integration with 3rd party systems.</p><br>
+            <h6 style="color: #40403f">Technical Specifications and Pricing</h6>
+            <div class="col-md-4" style="padding-right: 1px; padding-left: 1px; padding-bottom: 10px">
+              <div id="obd-box" onclick="off('obd-box')" class="overlay-popout">
+                <div id="obd" class="col-md-8 col-md-offset-2 text-center" style="margin-top: 150px; background-color: #666666; opacity: 0.9; height: 55%">
+                  <table style="width:100%; padding-top: 100px; color: #f2f2f2;"><br>
+                    <p style="font-size: 200%; color: #f2f2f2">Technical Specifications</p>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">Name:</td>
+                      <td style="padding-left: 20px; text-align: left">OBDBox</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">Mounting:</td>
+                      <td style="padding-left: 20px; text-align: left">OBD port (Under dash)</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">Weight:</td>
+                      <td style="padding-left: 20px; text-align: left">60g</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">Dimensions:</td>
+                      <td style="padding-left: 20px; text-align: left">50mm x 50mm x 23mm + J1962 Connector</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">Operational Temperature:</td>
+                      <td style="padding-left: 20px; text-align: left">-30 - +80 degrees celsius</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">Input Voltage:</td>
+                      <td style="padding-left: 20px; text-align: left">8 - 32vDC (32vDC Max.)</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">Backup Battery:</td>
+                      <td style="padding-left: 20px; text-align: left">LiPo 3.7v 180 mAh</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">Current Draw:</td>
+                      <td style="padding-left: 20px; text-align: left">70mA hotspot off, 160mA hotspot on, 10mA sleep</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">Onboard Storage:</td>
+                      <td style="padding-left: 20px; text-align: left">16mB, ~22,000 records</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">WiFi:</td>
+                      <td style="padding-left: 20px; text-align: left">802.11 b/g/n, AP Only</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">WiFi Security:</td>
+                      <td style="padding-left: 20px; text-align: left">WPA2</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">Antennas:</td>
+                      <td style="padding-left: 20px; text-align: left">GPS - Internal, LTE - Internal, WiFi - Internal</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">SIM Card:</td>
+                      <td style="padding-left: 20px; text-align: left">Micro</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">Indicator LEDS:</td>
+                      <td style="padding-left: 20px; text-align: left">LTE, GPS, OBD, WiFi</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">GPS Type:</td>
+                      <td style="padding-left: 20px; text-align: left">u-blox MAX-7C, ~3m accuracy</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">OBD Compatibility:</td>
+                      <td style="padding-left: 20px; text-align: left">All OBD protocols + J1939 + J1708/J1587</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div>
+                <button onclick="on('obd-box')" class="btn btn-md btn-primary navbar-btn">Tech Specs</button><br>
+              </div>
+
+            </div>
+            <div class="col-md-4" style="padding-right: 1px; padding-left: 1px; padding-bottom: 10px">
+              <div id="obd-pricing" onclick="off('obd-pricing')" class="overlay-popout">
+                <div id="obd-pricing" class="col-md-8 col-md-offset-2 text-center" style="margin-top: 150px; background-color: #666666; opacity: 0.9; height: 30%">
+                  <table style="width:100%; padding-top: 100px; color: #f2f2f2;"><br>
+                    <p style="font-size: 200%; color: #f2f2f2">OBDBox Pricing</p>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">1 - 20 Units</td>
+                      <td style="padding-left: 20px; text-align: left">$450.00 (ex GST & Shipping)</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">21 - 50 Units</td>
+                      <td style="padding-left: 20px; text-align: left">$425.00 (ex GST & Shipping)</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">51 + </td>
+                      <td style="padding-left: 20px; text-align: left">$400.00 (ex GST & Shipping)</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">Extras:</td>
+                      <td style="padding-left: 20px; text-align: left">-------------------------------------</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">OBDII double adapter, fit OEM port</td>
+                      <td style="padding-left: 20px; text-align: left">$80 each</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">60cm OBDII extension cable</td>
+                      <td style="padding-left: 20px; text-align: left">$40 each</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">2m OBDII extension cable</td>
+                      <td style="padding-left: 20px; text-align: left">$80 each</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div>
+                <button onclick="on('obd-pricing')" class="btn btn-md btn-primary navbar-btn">Pricing</button><br>
+              </div>              
+            </div>
+          </div>
+        </div>       
       </div>
     </div>
 
-    <div class="wrapper wrapper-lg wrapper-lighter" id="main">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8">
-            <h3 style="color: #d2de26">OBDBox</h3>
-            <h6 style="color: #40403f">Feature</h6>
-            <p>This is a simple empty page template. Just with a navbar and footer section and this content area in between. Use it as startingpoint to develop your own content pages.</p>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="wrapper wrapper-sm wrapper-light" id="main">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8">
-            <h3 style="color: #d2de26">Pricing</h3>
-            <p>This is a simple empty page template. Just with a navbar and footer section and this content area in between. Use it as startingpoint to develop your own content pages.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="wrapper wrapper-lg wrapper-lighter" id="main">
+    <div class="wrapper wrapper-lg wrapper-light" id="main">
       <div class="container">
         <div class="row">
           <div class="col-md-8">
             <h3 style="color: #d2de26">CommsBox</h3>
-            <p>This is a simple empty page template. Just with a navbar and footer section and this content area in between. Use it as startingpoint to develop your own content pages.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="wrapper wrapper-sm wrapper-light" id="main">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8">
-            <h3 style="color: #d2de26">Pricing</h3>
             <p>This is a simple empty page template. Just with a navbar and footer section and this content area in between. Use it as startingpoint to develop your own content pages.</p>
           </div>
         </div>
