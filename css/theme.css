@@ -1568,6 +1568,14 @@ pre {
   padding-left: 50px;
   padding-right: 50px; }
 
+.col-md-6-1 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 17px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+}
+
 .col-md-4-logo {
   position: relative;
   min-height: 1px;
@@ -1854,7 +1862,7 @@ pre {
     margin-left: 100%; } }
 
 @media (min-width: 992px) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-6-1, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md-4-1 {
     float: left; }
   .col-md-1 {
     width: 8.33333%; }
@@ -1864,9 +1872,14 @@ pre {
     width: 25%; }
   .col-md-4 {
     width: 33.33333%; }
+  .col-md-4-1 {
+    width: 33.33333%;
+    height: 240px; }
   .col-md-5 {
     width: 41.66667%; }
   .col-md-6 {
+    width: 50%; }
+  .col-md-6-1 {
     width: 50%; }
   .col-md-7 {
     width: 58.33333%; }
@@ -8229,6 +8242,12 @@ h5, h6 {
 .wrapper-sm {
   padding-top: 80px;
   padding-bottom: 80px; }
+
+.wrapper-sm1 {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-right: 3%;
+  padding-left: 3%; }
 
 .wrapper-testimonial {
   padding-top: 80px;
