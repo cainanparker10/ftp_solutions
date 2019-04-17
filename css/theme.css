@@ -8792,3 +8792,16 @@ a, .btn, img {
   color: white;
   transform: rotateY(180deg);
 }
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container-1 {
+  position: relative;
+  text-align: center;
+  color: white;
+}

@@ -24,6 +24,51 @@
     ================================================== -->
     <link href="css/theme.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet">
+    <style>
+      body, html {
+        height: 100%;
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+      }
+      
+      * {
+        box-sizing: border-box;
+      }
+      
+      .bg-image {
+        /* The image used */
+        background-image: url("img/login_bg.jpg");
+        
+        /* Add the blur effect */
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
+        
+        /* Full height */
+        height: 100%; 
+        
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      
+      /* Position text in the middle of the page/image */
+      .bg-text {
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+        color: white;
+        font-weight: bold;
+        border: 1px solid #d2de26;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        width: 80%;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
   </head>
 
   <body data-spy="scroll" data-target=".navbar" class="layout-boxed-no" style="overflow-y:hidden;"> <!-- "layout-boxed" class for boxed layout "layout-boxed-no" class for full size wrapper -->
@@ -55,20 +100,17 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-left">
-              <li class="active"><a href="index.html">FTP</a></li>
+              <li><a href="index.html">FTP</a></li>
               <li><a href="index.html#software">Software</a></li>
               <li><a href="index.html#hardware">Hardware</a></li>
-              <li><a href="index.html#remoteoperations">Remote Operations</a></li>
+              <li class="active"><a href="index.html#remoteoperations">Remote Operations</a></li>
               <li><a href="index.html#on_site_services">On-Site Services</a></li>
-        <!--  <li><a href="#contact">Contact</a></li> -->
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="caret"></span></a>
                 <ul class="dropdown-menu">
                   <li><a href="about.html">About</a></li>
                   <li><a href="careers.html">Careers</a></li>
                   <li><a href="contact.html">Contact Us</a></li>
-        <!--      <li><a href="contact.html">Contact Page</a></li> -->
-        <!--      <li><a href="404.html">404 Page</a></li> -->
                 </ul>
               </li>
             </ul>
@@ -79,33 +121,61 @@
 
 <!--******************************************************
 ******************** The Main area
-****************************************************** -->
+****************************************************** 
+            <div class="col-md-12-1 text-center">
+              <img src="img/otsc_trinity.svg" class="img-responsive" data-wow-delay="0.75s">
+            </div>
+ -->
 
-    <div class="wrapper wrapper-lg wrapper-lightest" id="main">
+
+<!--    <div class="container-1"> -->
+      <div class="bg-image"></div>
+<!--      <img src="img/login_bg.svg" alt="OTSC" style="width:100%; height: auto;"> 
+        <div class="centered" style="width: 75%; font-size: 18px">"We help organisations find their true potential with our customised technologies and end-to-end support models. This gives our customers better visibility and insight of their internal and external operations."
+        </div>  -->
+        <div class="bg-text">
+          <h2>Operational Technology Support Centre</h2>
+          <hr/>
+          <p style="font-size: 140%;"><i>We help organisations find their true potential with our customised technologies and end-to-end support models. This gives our customers better visibility and insight of their internal and external operations</i></p>
+        </div>
+
+
+    <div class="wrapper wrapper-sm wrapper-lighter" id="main">
       <div class="container">
+        <div class="col-md-12">
+          <h2 style="color: #d2de26; text-align: left;">Service Levels</h2>
+          <div class="row" style="padding-top: 4%">
+            <div class="col-md-6-1">
+              <h4 style="color: #d2de26;">vNOC Autonomy</h4>
+              <p>Targeted at clients using autonomous technologies, vNOC Autonomy ensures customers experience the highest in network   availability and reliability. Customers with this level of support receive dedicated OTSC resources and access to FTP’s   priority relationship with OEM’s for escalation of issues, and integration of proprietary monitoring and alerting messag  es.   This level of service is unparalleled in the mining industry, and as such we collaborate with clients to define unique  performance metrics and KPIs that optimise your autonomy network.</p>
+            </div>
+            <div class="col-md-6-1">
+              <h4 style="color: #d2de26;">vNOC Premium</h4> 
+              <p>Premium service ensures that all issues re lated to operational networks are discovered, reported, prioritised, assig ned, and   escalated to the relevant resources and conta ct points within the customer’s support / technical team. Clients benefit  from   constant input from and interaction with FTP  and TNS SMEs. This includes a detailed root cause analysis whenever there  is a   network issue, network recommendations and remediation suggestions and IMS trigger customisations; where an expert with in th  e   OTSC team can help tune triggers and alerts for your enterprise.</p>
+            </div>
+        </div>
         <div class="row">
-          <div class="col-md-12">
-            <p>This is a simple empty page template. Just with a navbar and footer section and this content area in between. Use it as startingpoint to develop your own content pages.</p>
+          <div class="col-md-6-1">
+            <h4 style="color: #d2de26;">vNOC Standard</h4>
+            <p>vNOC Standard delivers a higher level of support to the customer by layering FTP and True North’s knowledge offering with FTP Assist by providing access to remote subject matter experts located within the OTSC. Offered across single or multiple sites, vNOC Standard ensures the presence of reliable resources to conduct daily health checks and conduct incident management. Our OTSC specialists leverage IMS’ features to improve network performance, streamlining fault identification procedures, reducing downtime and mean-time-to-recovery. vNOC Standard is not available for 24x7 coverage.</p>
+          </div>
+          <div class="col-md-6-1">
+            <h4 style="color: #d2de26;">FTP Assist</h4>
+            <p>This base support level (formerly called OTSC Technical Support) is a line item included with the purchase of FTP-branded hardware of software such as IMS. It has been designed to provide the customer with maximum visibility of their network, while leaving the daily monitoring, optimization and resolution of detected issues to the customer. FTP stands by its products and, as such, will assist the user with any FTP related hardware or software fault. Clients also receive generic, pre-configured dashboards and access to the online wiki and support material.</p>
+          </div>
+        </div>
+          <div class="col-md-12" style="padding-top: 4%">
+            <img src="img/otsc_trinity.svg" alt="OTSC" style="width:100%; height: auto;">
           </div>
         </div>
       </div>
     </div>
 
-    <div class="wrapper wrapper-lg wrapper-lighter" id="main">
+    <div class="wrapper wrapper-sm wrapper-light" id="main">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <p>This is a simple empty page template. Just with a navbar and footer section and this content area in between. Use it as startingpoint to develop your own content pages.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="wrapper wrapper-lg wrapper-light" id="main">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <p>This is a simple empty page template. Just with a navbar and footer section and this content area in between. Use it as startingpoint to develop your own content pages.</p>
+            <h3 style="color: #d2de26">Service Inclusions</h3>
           </div>
         </div>
       </div>
@@ -117,21 +187,17 @@
   <div id="footer" class="wrapper wrapper-md wrapper-darker wow fadeIn">
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
-          <p><br/><a href="contact.html" class="btn btn-md btn-primary navbar-btn">Contact Us</a></p>
+        <div class="col-md-6-1 text-center">
+          <p><a href="contact.html" class="btn btn-md btn-primary navbar-btn">Contact Us</a></p>
         </div>
-        <div class="col-md-4">
-          <h6>Latest news</h6>
-          <p>Lorem ipsum dolor sit nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua...<br/><a href="single.html">Read on</a></p>
-        </div>
-        <div class="col-md-4 text-center">
-          <a href="https://au.linkedin.com/company/ftp-solutions-pty-ltd" target="_blank"><i class="fab fa-linkedin-in fa-3x text-muted"></i>             
-        </div>
-      </div>   
-      <div class="row wrapper-sm wrapper-no-padding-bottom">
-        <div class="col-md-12 text-center">
-           <hr/>  
-          <p><a href="index.html#start"><small>© 2019 - FTP Solutions Pty Ltd</a></p>
+        <div class="col-md-6-1 text-center">
+          <a href="https://au.linkedin.com/company/ftp-solutions-pty-ltd" target="_blank"><i class="fab fa-linkedin-in fa-3x text-muted"></i></a>
+        </div>   
+        <div class="row wrapper-sm wrapper-no-padding-bottom">
+          <div class="col-md-12-1 text-center">
+           <hr/>
+           <div><p><small>© 2019 - FTP Solutions Pty Ltd</small></p></div>
+          </div>
         </div>
       </div>
     </div>
