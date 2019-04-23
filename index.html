@@ -66,7 +66,7 @@
                 <ul class="dropdown-menu">
                   <li><a href="about.html">About</a></li>
                   <li><a href="careers.html">Careers</a></li>
-                  <li><a href="contact.html">Contact Us</a></li>
+                  <li><a href="locate.html">Locate Us</a></li>
         <!--      <li><a href="contact.html">Contact Page</a></li> -->
         <!--      <li><a href="404.html">404 Page</a></li> -->
                 </ul>
@@ -112,7 +112,7 @@
                 <p class="lead"></br>Visualise and optimise your operational network with IMS.</p>
                 <p class="lead">A unique single-pane-of-glass platform to collate, manage and view all of your critical data.</p>
                 <p class="lead">A geographical based UI provides an experience of your operation that is unparalleled.</p>
-                <p><a href="software.html" class="btn btn-md btn-primary navbar-btn">Learn more </a></p>
+                <p><a href="software.html" class="btn btn-primary navbar-btn">Learn more </a></p>
               </div>
             </div>
             <div class="row">
@@ -280,35 +280,113 @@
 <!--******************************************************
 ******************** The Testimonial Wrapper ****************************************************** -->
 
-        <div class="wrapper wrapper-lightest wrapper-sm text-center" id="testimonials">
-          <div class="container wrapper-md">
+        <div class="wrapper wrapper-lightest wrapper-sm text-center">
+          <div class="container">
             <div class="row">
-              <div class="col-md-10 col-md-offset-1">
-                <h2>Our Valued Partners<br/><br/></h2>
+              <div class="col-md-12">
+                <h2 style="padding-bottom: 8%">Our Valued Partners</h2>
               </div>
             </div>
             <div class="row">
                   <div class="col-md-4">
-                    <img src="img/Caterpillar-Logo-3D.png" alt="Caterpillar" style="height:120px;" class="img-responsive  wow fadeIn" data-wow-delay="0.25s"/>
+                    <img src="img/Caterpillar-Logo-3D.png" alt="Caterpillar" style="width:120px; height:auto" class="wow fadeIn" data-wow-delay="0.25s"/>
                   </div>
                   <div class="col-md-4">
-                    <img src="img/komotsu.png" alt="Komatsu" style="height:150px;" class="img-responsive  wow fadeIn" data-wow-delay="0.5s"/>
+                    <img src="img/komotsu.png" alt="Komatsu" style="width:200px; height:auto" class="wow fadeIn" data-wow-delay="0.5s"/>
                   </div>
                   <div class="col-md-4">
-                    <img src="img/true_north.png" alt="True North Solutions" style="height:140px;" class="img-responsive  wow fadeIn" data-wow-delay="0.75s"/>
+                    <img src="img/true_north.png" alt="True North Solutions" style="width:180px; height:auto" class="wow fadeIn" data-wow-delay="0.75s"/>
                   </div>
             </div>
+          </div>
         </div>
 
 <!--******************************************************
 ******************** The Footer wrapper
 ****************************************************** -->
-  <div id="footer" class="wrapper wrapper-md wrapper-darker wow fadeIn">
+  <div id="footer" class="wrapper wrapper-sm wrapper-darker wow fadeIn">
     <div class="container">
       <div class="row">
-        <div class="col-md-6-1 text-center">
-          <p><a href="contact.html" class="btn btn-md btn-primary navbar-btn">Contact Us</a></p>
-        </div>
+          <div id="contact-us" class="overlay-popout">
+            <div id="contact-us" class="col-md-8 col-md-offset-2 text-center" style="margin-top: 150px; background-color: #666666; opacity: 0.9; height: 74%">
+              <div style="text-align: right; font-size: 1.5em"><i onclick="off('contact-us')" class="fas fa-window-close" aria-hidden="false"></i></div>
+              <!-- Form Name -->
+              <legend><h3>Contact Us </h3></legend>
+
+              <!-- Text input -->
+              <form action="https://mailthis.to/cainan.parker@ftpsolutions.com.au" method="POST" encType="multipart/form-data">
+                <!-- Name -->
+                <div class="form-group text-center">
+                  <div class="row">
+                    <label class="col-md-4 control-label" for="name" style="font-size: 1.5em">Name</label> 
+                    <div class="col-md-8">
+                      <input id="name" type="text" name="name" placeholder="Your name" required="" class="form-control input-sm">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group text-center">
+                  <div class="row">
+                    <label class="col-md-4 control-label" for="email" style="font-size: 1.5em">Email</label> 
+                    <div class="col-md-8">
+                      <input id="email" type="email" name="email" placeholder="Your email" required="" class="form-control input-sm">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Phone Number -->
+                <div class="form-group text-center">
+                  <div class="row">
+                    <label class="col-md-4 control-label" for="phone" style="font-size: 1.5em">Phone</label> 
+                    <div class="col-md-8">
+                      <input id="phone" type="text" name="phone" placeholder="0412 345 678" required="" class="form-control input-sm">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Textarea (Message) -->
+                <div class="form-group text-center">
+                  <div class="row">
+                    <label class="col-md-4 control-label" for="message" style="font-size: 1.5em">Message</label>
+                    <div class="col-md-8">                     
+                      <textarea class="form-control" id="message" name="message" required="" class="form-control input-sm"></textarea>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- File attachments -->
+                <div class="form-group text-center">
+                  <div class="row">
+                    <label class="col-md-4 control-label" for="file" style="font-size: 1.5em">Upload</label>
+                    <div class="col-md-8">                     
+                      <input id="file" type="file" name="file" placeholder="">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Optional (hidden) fields -->
+                <!-- Custom email Subject -->
+                <input type="hidden" name="_subject" value="Contact form submitted">
+                <!-- Custom email ReplyTo Address -->
+                <input type="hidden" name="_replyto" value="foo@bar.co">
+                <!-- Redirect to a page after recaptcha -->
+                <input type="hidden" name="_after" value="index.html">
+                <!-- Honeypot (to catch comment spam bots) -->
+                <input type="hidden" name="_honeypot" value="">
+                <!-- Apply a custom confirmation message on the second step -->
+                <input type="hidden" name="_confirmation" value="">
+
+                <!-- Submit Button -->
+                <div class="col-md-12 text-center" style="padding-top: 4%">
+                  <input type="submit" name="submit" value="Submit Form" class="btn btn-primary">
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6-1" style="padding-left: 10%;">
+            <button onclick="on('contact-us')" class="btn btn-md btn-primary navbar-btn">Contact Us</button><br>
+          </div>
         <div class="col-md-6-1 text-center">
           <a href="https://au.linkedin.com/company/ftp-solutions-pty-ltd" target="_blank"><i class="fab fa-linkedin-in fa-3x text-muted"></i></a>
         </div>   
@@ -321,7 +399,6 @@
       </div>
     </div>
   </div>
-
 
 <!--******************************************************
 ******************** assets and scripts
@@ -336,6 +413,7 @@
     <script src="js/smoothscroll.min.js" type="text/javascript"></script> <!-- smoothscrolling script - remove if you don´t use it -->
     <script src="js/validator.min.js" type="text/javascript"></script> <!-- The script for particle effects - remove if you don´t use it -->
     <script src="js/wow.min.js" type="text/javascript"></script> <!-- The script for particle effects - remove if you don´t use it -->
+    <script src="js/overlay.js" type="text/javascript"></script> <!-- Overlay for the technical specifications for each item -->
 
 
 
