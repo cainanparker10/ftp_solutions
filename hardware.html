@@ -10,6 +10,8 @@
     <meta name="author" content="">
     <link rel="icon" href="logo.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script>UPLOADCARE_PUBLIC_KEY = "9c837c9e948f35f1483d";</script>
+    <script src="https://ucarecdn.com/libs/widget/2.10.2/uploadcare.full.min.js" charset="utf-8"></script>
 
     <title>Hardware</title>
 
@@ -60,15 +62,12 @@
               <li class="active"><a href="index.html#hardware">Hardware</a></li>
               <li><a href="index.html#remoteoperations">Remote Operations</a></li>
               <li><a href="index.html#on_site_services">On-Site Services</a></li>
-        <!--  <li><a href="#contact">Contact</a></li> -->
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="caret"></span></a>
                 <ul class="dropdown-menu">
                   <li><a href="about.html">About</a></li>
                   <li><a href="careers.html">Careers</a></li>
-                  <li><a href="locate.html">Locate Us</a></li>
-        <!--      <li><a href="contact.html">Contact Page</a></li> -->
-        <!--      <li><a href="404.html">404 Page</a></li> -->
+                  <li><a href="contact.html">Contact Us</a></li>
                 </ul>
               </li>
             </ul>
@@ -752,20 +751,219 @@
 
 <!-- OBDBox  End -->
 
-<!-- CommsBox  Start -->
+<!-- CommsBox  Start 
 
     <div class="wrapper wrapper-sm wrapper-light" id="main">
       <div class="container">
         <div class="row">
-          <div class="col-md-8">
+          <div class="col-md-6-1 text-center">
             <h3 style="color: #d2de26">CommsBox</h3>
-            <p>This is a simple empty page template. Just with a navbar and footer section and this content area in between. Use it as startingpoint to develop your own content pages.</p>
+            <img src="img/obdbox.png" style="width: 70%; height: auto; padding-top: 20%" class="wow fadeIn" data-wow-delay="0.75s">
           </div>
-        </div>
+          <div class="col-md-6-1" style="border-left: 1px solid #9bca3c;">
+            <div class="col-md-12-1">
+              <h6 style="color: #40403f">Designed for harsh environments</h6>
+              <p>The CommsBox was specifically designed to meet the harsh environment of that found in mine sites across the globe. It is a low cost option tot hat of the standard communications trailer and allows for the business to carry spares for any critical communication gaps that occur during operations.</p>
+            </div>
+            <div class="col-md-12-1">
+              <h6 style="color: #40403f;">Continous power</h6>
+              <p>The unit has been designed to provide a continuous 24W to selected radios and will maintain that continuously for over 100 hours without any sun. The unit can also be customised to the client with either PoE or 12/24vDC options.</p>
+            </div>
+            <div class="col-md-6-1">
+              <li>Vehicle Speed (km/h)</li>
+              <li>Engine RPM</li>
+              <li>Engine Coolant Temperature (C)</li>
+              <li>Throttle Pedal Position (%)</li>
+              <li>Engine Load (%)</li>
+              <li>Fuel Rail Pressure (kPa)</li>
+              <li>Engine Fuel Rate (L/h)</li>
+              <li>O2 Sensor Voltage (V)</li>
+            </div>
+            <div class="col-md-6-1">
+              <li>Fuel Tank Level (%)</li>
+              <li>Vehicle Battery Voltage (V)</li>
+              <li>GPS Location (Lat, Lon)</li>
+              <li>Intake Air Temperature (C)</li>
+              <li>Timing Advance (deg.)</li>
+              <li>Narrow Band Air/Fuel Ratio</li>
+              <li>Engine Oil Temperature (C)</li>
+              <li>Commanded AFR</li>
+            </div>
+            <div class="col-md-12-1">
+              <p style="font-size: 10px; text-align: left;" class="text-muted">
+                NOTE: Not all data is available on all vehicles
+              </p>
+            </div>
+            <div class="col-md-12-1">
+              <h6 style="color: #40403f;">Driver Behaviour Monitoring</h6>
+            </div>
+            <div class="col-md-6-1">
+              <li>Rough Braking</li>
+              <li>Harsh Driving</li>
+              <li>No Warm Up</li>
+              <li>Long Idle</li>
+            </div>
+            <div class="col-md-6-1">
+              <li>Fatigued Driving</li>
+              <li>Rough Terrain</li>
+              <li>High RPM</li>
+            </div>
+            <div class="col-md-12-1">
+              <p style="font-size: 10px; text-align: left;" class="text-muted">
+                NOTE: Crash detection is also possible!
+              </p>
+            </div>
+            <div class="col-md-12-1">
+              <h6 style="color: #40403f;">Applications</h6>
+              <p>Interface the OBDBox with the vehicle’s OBD port to read data from the ECU, such as:</p>
+            </div>
+            <div class="col-md-6-1">
+              <li>Fleet Management</li>
+              <li>Insurance and Rental</li>
+              <li>Driver Behaviour Monitoring</li>
+              <li>Mileage Tracking</li>
+            </div>
+            <div class="col-md-6-1">
+              <li>Vehicle Tracking</li>
+              <li>Safety and Security</li>
+              <li>Driver Profiling</li>
+              <li>Vehicle Profiling</li>
+            </div>
+            <div class="col-md-12-1">
+              <h6 style="color: #40403f;">Mounting Options</h6>
+              <p>The small form factor of the OBDBox allows it to be installed directly into the vehicles OBD port without any special harnesses or wiring. Extension cables and Y cables are available to allow the user to move the OBDBox to a more suitable location if needed.
+              </p>
+            </div>
+            <div class="col-md-12-1">
+              <h6 style="color: #40403f;">Support for Integrators</h6>
+              <p>IMS allows for 3rd party applications to integrate OBDBox data through the IMS Application Programing Interface (API). Any data that the OBDBox transmits is available through the IMS platform.</p>
+            </div>
+            <div class="col-md-12-1">
+            <h6 style="color: #40403f">Technical Specifications and Pricing</h6>
+            </div>
+            <div class="col-md-6-1">
+              <div id="obd-box" onclick="off('obd-box')" class="overlay-popout">
+                <div id="obd" class="col-md-8 col-md-offset-2 text-center" style="margin-top: 150px; background-color: #666666; opacity: 0.9; height: 55%">
+                  <table style="width:100%; padding-top: 100px; color: #f2f2f2;"><br>
+                    <p style="font-size: 200%; color: #f2f2f2">Technical Specifications</p>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">Name:</td>
+                      <td style="padding-left: 20px; text-align: left">OBDBox</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">Mounting:</td>
+                      <td style="padding-left: 20px; text-align: left">OBD port (Under dash)</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">Weight:</td>
+                      <td style="padding-left: 20px; text-align: left">60g</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">Dimensions:</td>
+                      <td style="padding-left: 20px; text-align: left">50mm x 50mm x 23mm + J1962 Connector</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">Operational Temperature:</td>
+                      <td style="padding-left: 20px; text-align: left">-30 - +80 degrees celsius</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">Input Voltage:</td>
+                      <td style="padding-left: 20px; text-align: left">8 - 32vDC (32vDC Max.)</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">Backup Battery:</td>
+                      <td style="padding-left: 20px; text-align: left">LiPo 3.7v 180 mAh</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">Current Draw:</td>
+                      <td style="padding-left: 20px; text-align: left">70mA hotspot off, 160mA hotspot on, 10mA sleep</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">Onboard Storage:</td>
+                      <td style="padding-left: 20px; text-align: left">16mB, ~22,000 records</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">WiFi:</td>
+                      <td style="padding-left: 20px; text-align: left">802.11 b/g/n, AP Only</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">WiFi Security:</td>
+                      <td style="padding-left: 20px; text-align: left">WPA2</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">Antennas:</td>
+                      <td style="padding-left: 20px; text-align: left">GPS - Internal, LTE - Internal, WiFi - Internal</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">SIM Card:</td>
+                      <td style="padding-left: 20px; text-align: left">Micro</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">Indicator LEDS:</td>
+                      <td style="padding-left: 20px; text-align: left">LTE, GPS, OBD, WiFi</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">GPS Type:</td>
+                      <td style="padding-left: 20px; text-align: left">u-blox MAX-7C, ~3m accuracy</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">OBD Compatibility:</td>
+                      <td style="padding-left: 20px; text-align: left">All OBD protocols + J1939 + J1708/J1587</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="col-md-6-1 text-center" style="padding-left: 10%;">
+                <button onclick="on('obd-box')" class="btn btn-md btn-primary navbar-btn">Tech Specs</button><br>
+              </div>
+            </div>
+
+            <div class="col-md-6-1">
+              <div id="obd-pricing" onclick="off('obd-pricing')" class="overlay-popout">
+                <div id="obd-pricing" class="col-md-8 col-md-offset-2 text-center" style="margin-top: 150px; background-color: #666666; opacity: 0.9; height: 30%">
+                  <table style="width:100%; padding-top: 100px; color: #f2f2f2;"><br>
+                    <p style="font-size: 200%; color: #f2f2f2">OBDBox Pricing</p>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">1 - 20 Units</td>
+                      <td style="padding-left: 20px; text-align: left">$450.00 (ex GST & Shipping)</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">21 - 50 Units</td>
+                      <td style="padding-left: 20px; text-align: left">$425.00 (ex GST & Shipping)</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">51 + </td>
+                      <td style="padding-left: 20px; text-align: left">$400.00 (ex GST & Shipping)</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">Extras:</td>
+                      <td style="padding-left: 20px; text-align: left">-------------------------------------</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">OBDII double adapter, fit OEM port</td>
+                      <td style="padding-left: 20px; text-align: left">$80 each</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">60cm OBDII extension cable</td>
+                      <td style="padding-left: 20px; text-align: left">$40 each</td>
+                    </tr>
+                    <tr>
+                      <td style=" padding-right: 20px; text-align: right">2m OBDII extension cable</td>
+                      <td style="padding-left: 20px; text-align: left">$80 each</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="col-md-6-1 text-center" style="padding-left: 10%;">
+                <button onclick="on('obd-pricing')" class="btn btn-md btn-primary navbar-btn">Pricing</button><br>
+              </div>              
+            </div>
+          </div>
+        </div>       
       </div>
     </div>
 
-<!-- CommsBox  End -->
+ CommsBox  End -->
 
 <!--******************************************************
 ******************** The Footer wrapper
@@ -773,9 +971,85 @@
   <div id="footer" class="wrapper wrapper-sm wrapper-darker wow fadeIn">
     <div class="container">
       <div class="row">
-        <div class="col-md-6-1 text-center">
-          <p><a href="contact.html" class="btn btn-md btn-primary navbar-btn">Contact Us</a></p>
-        </div>
+          <div id="contact-us" class="overlay-popout">
+            <div id="contact-us" class="col-md-8 col-md-offset-2 text-center" style="margin-top: 150px; background-color: #666666; height: 74%">
+              <div style="text-align: right; font-size: 1.5em"><i onclick="off('contact-us')" class="fas fa-window-close" aria-hidden="false"></i></div>
+              <!-- Form Name -->
+              <legend><h3>Contact Us </h3></legend>
+              <!-- Text input -->
+              <form action="https://formspree.io/cainan.parker@ftpsolutions.com.au" method="POST" encType="multipart/form-data">
+                <!-- Name -->
+                <div class="form-group text-center">
+                  <div class="row">
+                    <label class="col-md-4 control-label" for="name" style="font-size: 1.5em">Name</label> 
+                    <div class="col-md-8">
+                      <input id="name" type="text" name="name" placeholder="Your name" required="" class="form-control input-sm">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group text-center">
+                  <div class="row">
+                    <label class="col-md-4 control-label" for="email" style="font-size: 1.5em">Email</label> 
+                    <div class="col-md-8">
+                      <input id="email" type="email" name="email" placeholder="Your email" required="" class="form-control input-sm">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Phone Number -->
+                <div class="form-group text-center">
+                  <div class="row">
+                    <label class="col-md-4 control-label" for="phone" style="font-size: 1.5em">Phone</label> 
+                    <div class="col-md-8">
+                      <input id="phone" type="text" name="phone" placeholder="0412 345 678" required="" class="form-control input-sm">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Textarea (Message) -->
+                <div class="form-group text-center">
+                  <div class="row">
+                    <label class="col-md-4 control-label" for="message" style="font-size: 1.5em">Message</label>
+                    <div class="col-md-8">                     
+                      <textarea class="form-control" id="message" name="message" required="" class="form-control input-sm"></textarea>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- File attachments -->
+                <div class="form-group text-center">
+                  <div class="row">
+                    <label class="col-md-4 control-label" for="file" style="font-size: 1.5em">Upload</label>
+                    <div class="col-md-4">                     
+                      <input id="file" type="hidden" role="uploadcare-uploader" name="ftp_solutions" />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Optional (hidden) fields -->
+                <!-- Custom email Subject -->
+                <input type="hidden" name="_subject" value="Contact form submitted">
+                <!-- Custom email ReplyTo Address -->
+                <input type="hidden" name="_replyto" value="foo@bar.co">
+                <!-- Redirect to a page after recaptcha -->
+                <input type="hidden" name="_after" value="index.html">
+                <!-- Honeypot (to catch comment spam bots) -->
+                <input type="hidden" name="_honeypot" value="">
+                <!-- Apply a custom confirmation message on the second step -->
+                <input type="hidden" name="_confirmation" value="">
+
+                <!-- Submit Button -->
+                <div class="col-md-12 text-center" style="padding-top: 4%">
+                  <input type="submit" name="submit" value="Submit Form" class="btn btn-primary">
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6-1" style="padding-left: 10%;">
+            <button onclick="on('contact-us')" class="btn btn-md btn-primary navbar-btn">Contact Us</button><br>
+          </div>
         <div class="col-md-6-1 text-center">
           <a href="https://au.linkedin.com/company/ftp-solutions-pty-ltd" target="_blank"><i class="fab fa-linkedin-in fa-3x text-muted"></i></a>
         </div>   
